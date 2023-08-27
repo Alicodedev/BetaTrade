@@ -1,0 +1,75 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+
+
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+.navbar-brand {
+    font-family: 'Cofo Sans Bold', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.error-message {
+
+    background-color: #fce4e4;
+    border: 1px solid #fcc2c3;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    margin-top: auto; /* Pushes error message to the bottom */
+}
+
+.error-text {
+    color: #cc0033;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;
+    text-shadow: 1px 1px rgba(250,250,250,.3);
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    max-height: 250px;
+    position: relative;
+}
+
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+}
+
+.centered-container {
+    text-align: center;
+}
+
+

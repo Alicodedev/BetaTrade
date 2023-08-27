@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Apology
+{% endblock %}
+
+{% block main %}
+    <!-- https://memegen.link/ -->
+    <div class="page-container">
+        <div class="centered-container">
+            <div class="image-container">
+                <img alt="{{ top }}" class="img-fluid" src="{{ static_image_path }}" title="{{ top }} " style="max-width: 600px; max-height: 250px;">
+                <div class="error-message">
+                    <div class="error-text">
+                        {{ bottom }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<img alt="{{ top }}" class="img-fluid" src="{{ url_for('static', filename='beta_symbol.png') }}" title="{{ top }}" style="max-width: 600px; max-height: 250px;"> -->
+{% endblock %}
