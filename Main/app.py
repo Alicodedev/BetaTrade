@@ -242,8 +242,8 @@ def sell():
 
         # UPDATE THE USERS CASH WHEN SELL TRANSCTION IS COMPLETE
         db.execute("UPDATE users SET cash = ? WHERE id = ? ", uptd_cash , user_id) #upadting the users table of coloum cash(balance) from selling the shares( )
-
-        db.execute("INSERT INTO transactions (user_id, shares, symbol, price) VALUES (?, ?, ?, ?)", user_id, -shares, symbol, stock_price ) # tracking sale of the shares for in transactions table by adding new row
+        date = datetime.datetime.now() # holds current time
+        db.execute("INSERT INTO transactions (user_id, shares, symbol, price) VALUES (?, ?, ?, ?, ?)", user_id, -shares, symbol, stock_price, date) # tracking sale of the shares for in transactions table by adding new row
         return redirect('/')
 
 
